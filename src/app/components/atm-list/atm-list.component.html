@@ -1,0 +1,25 @@
+
+<div class="find-city">
+  <form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input #city type="text" class="form-control" placeholder="City">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="getAtmsByCity(city.value)">Find</button>
+</form>
+</div>
+
+
+  <div class="atm-top-container">
+  <div id="container" *ngFor="let atm of atms"  class="atm-container-padding">
+    <div class="topcorner">
+      <img src="https://cdn4.iconfinder.com/data/icons/PLASTICXP/accounting/png/48/atm.png" />
+    </div>
+      <div class="atm-address">
+
+         {{atm.address.housenumber}} {{atm.address.street}} <br />
+         {{atm.address.city}}, {{atm.address.postalcode}} <br />
+
+      <hr>
+    </div>
+  </div>
+</div>

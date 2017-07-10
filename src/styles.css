@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+.atm-body{
+  margin-left:50px;
+}
+hr{
+  display:inline-block;
+  width:200px;
+  margin-bottom: 10px;
+}
+#container{
+  position: relative;
+}
+.topcorner{
+   position:absolute;
+   top:0;
+   left:0;
+   margin-top: 10px;
+   display: inline-block;
+   margin-right:8px;
+   margin-left: 16px
+  }
+.header{
+  text-align: center;
+  background-color: #FF9800;
+  color: #ffffff;
+  padding: 50px
+}
+.atm-address{
+  display: inline-block;
+  margin-left:74px;
+}
+.find-city{
+  height: 100px;
+}
+.atm-top-container{
+  overflow: auto;
+  height:380px;
+  width: 380px;
+  border-left:8px solid yellowgreen
+}
